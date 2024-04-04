@@ -1,18 +1,20 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Layout from './components/layout/Layout'
+import { useState } from 'react';
+import './App.css';
 import 'flowbite';
+import { Route, Routes } from 'react-router-dom';
+import { Faq, Home, NotFound, Product } from './pages';
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
-      <Layout>
-        <h1>hello</h1>
-      </Layout>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/faq' element={<Faq/>}/>
+        <Route path='/products' element={<Product/>}/>
+        <Route path='*' element={<NotFound/>}/>
+      </Routes>
     </>
   )
 }

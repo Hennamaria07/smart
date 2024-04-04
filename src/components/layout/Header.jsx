@@ -129,7 +129,7 @@ const Header = () => {
               <Dropdown.Item>Earnings</Dropdown.Item>
               <Dropdown.Divider />
               <Dropdown.Item onClick={handleSignOut}>Sign out</Dropdown.Item>
-            </Dropdown>) : (<Link to={'/login'}><p className='text-gray-900 font-semibold cursor-pointer'>
+            </Dropdown>) : (<Link className=' flex items-center' to={'/login'}><p className='text-gray-900 font-semibold cursor-pointer'>
               Sign in
             </p></Link>)}
             <Navbar.Toggle />
