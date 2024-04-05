@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 const NotFound = () => {
   return (
-    <Layout>
+    <Layout title={'Oops! Page Not Found - EcoMart'} description={"Lost in the wilderness of the internet? Don't worry! Navigate back to EcoMart's lush aisles. Shop sustainably. Shop smartly. Shop at EcoMart."} author={"Henna Maria"} keyword={" EcoMart, e-commerce, MERN stack, sustainable shopping, online marketplace, eco-friendly products, 404 page, lost page"}>
         <section>
     <div>
     <Breadcrumb className='py-10 px-5' aria-label="Default breadcrumb example">
